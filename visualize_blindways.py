@@ -255,9 +255,9 @@ for seq_filename in all_filename:
         fig.patch.set_facecolor('black')
         ax.set_box_aspect((xlim[1]-xlim[0], ylim[1]-ylim[0], zlim[1]-zlim[0]))
         plt.tight_layout(pad=0)
-        plt.savefig(f'visualisation/{seq_name}/{t:012d}.jpg', bbox_inches='tight', pad_inches=0, dpi=500)
+        plt.savefig(f'visualization/{seq_name}/{t:012d}.jpg', bbox_inches='tight', pad_inches=0, dpi=500)
         plt.close()
 
         
-    save_video(f'visualisation/{seq_name}/*.jpg', f'visualisation/{seq_name}.mp4')
+    save_video(f'visualization/{seq_name}/*.jpg', f'visualization/{seq_name}.mp4')
 
